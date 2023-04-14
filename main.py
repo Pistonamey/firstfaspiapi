@@ -34,7 +34,7 @@ DB: List[Person] = [
 
 ]
 
-
+@app.get("/")
 @app.get("/api")
 async def root():
     return DB
