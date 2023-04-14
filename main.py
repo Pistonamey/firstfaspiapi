@@ -16,7 +16,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -33,6 +33,12 @@ DB: List[Person] = [
     Person(id=2, name="Alex", age=21)
 
 ]
+
+<< << << < HEAD
+
+== == == =
+>>>>>> > a7477b39fec6e2aafa43746e034fd627fe1de347
+
 
 @app.get("/")
 @app.get("/api")
