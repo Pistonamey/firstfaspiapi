@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
-    "https://deployreactfastapi.netlify.app"
+    "https://deployreactfastapi.netlify.app/"
     "http://127.0.0.1.tiangolo.com",
     "https://127.0.0.1.tiangolo.com",
     "http://127.0.0.1",
@@ -16,7 +16,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
