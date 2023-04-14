@@ -34,11 +34,6 @@ DB: List[Person] = [
 
 ]
 
-<< << << < HEAD
-
-== == == =
->>>>>> > a7477b39fec6e2aafa43746e034fd627fe1de347
-
 
 @app.get("/")
 @app.get("/api")
